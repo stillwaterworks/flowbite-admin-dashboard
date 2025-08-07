@@ -1,208 +1,132 @@
-# [Flowbite Admin Dashboard](https://flowbite-admin-dashboard.vercel.app) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fthemesberg%2Fflowbite-admin-dashboard&text=Check%20out%20this%20open-source%20admin%20dashboard%20built%20with%20Flowbite%20and%20Tailwind%20CSS)
+# Flowbite Admin Dashboard
 
-[![version](https://img.shields.io/npm/v/flowbite-admin-dashboard)](https://www.npmjs.com/package/flowbite-admin-dashboard)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
-[![GitHub issues open](https://img.shields.io/github/issues/themesberg/flowbite-admin-dashboard.svg)](https://github.com/themesberg/flowbite-admin-dashboard/issues?q=is%3Aopen+is%3Aissue)
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/themesberg/flowbite-admin-dashboard.svg)](https://github.com/themesberg/flowbite-admin-dashboard/issues?q=is%3Aissue+is%3Aclosed)
-
-[![Flowbite Admin Dashboard Live Preview](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/flowbite-admin-dashboard-preview.png)](https://flowbite-admin-dashboard.vercel.app/)
-
-This project is a free and open-source UI admin dashboard template built with the components from [Flowbite](https://github.com/themesberg/flowbite) and based on the utility-first [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) framework featuring charts, tables, widgets, CRUD layouts, modals, drawers, and more.
-
-This admin dashboard can quickly help you get started building an application for your project using the newest UI/UX development technologies in the open-source area including Tailwind CSS and Flowbite.
-
-## 🌀 Built with Flowbite
-
-The interactive components such as the navbars, modals, drawers, and tooltips are all based on the popular [open-source component library called Flowbite](https://flowbite.com/) which enables us to use these elements by creating more complex set of pages and widgets inside a fully-fledged admin dashboard template.
-
-## 💨 Tailwind CSS utility classes
-
-All of the pages, widgets, and components are solely based on the utility-first classes from Tailwind CSS and it is compatible with the latest `v3.x` of the technology by automatically purging all of the classes based on the template paths.
-
-## 📊 15 example pages
-
-Get started with 15 advanced examples pages including two different layouts of a dashboard's homepage full of charts widgets, tables, datepickers, and statistics and also with two CRUD layout pages for products, users, a settings page, authentication pages for login and register and even custom 404 and 500 error pages.
-
-## 🧱 Advanced components
-
-This admin dashboard contains many advanced components both from Flowbite but also from other third-party libraries such as ApexCharts which have been customly tailored with Tailwind CSS classes and designed based on the [Flowbite Design System](https://flowbite.com/figma/).
-
-## 📚 Flowbite documentation
-
-If you want to use this project we recommend to also [study the component library](https://flowbite.com/docs/getting-started/introduction/) that we used to build this dashboard because you can use even more components from that library to enhance the examples that we've coded here already.
-
-## ⚙️ Workflow
-
-This product is built using the following widely used technologies:
-
-- Tailwind CSS: [tailwindcss.com](https://tailwindcss.com/)
-- Flowbite: [flowbite.com](http://flowbite.com/)
-- HUGO [gohugo.io](https://gohugo.io/documentation/)
-- Webpack [webpack.js.org](https://webpack.js.org/)
+A free and open-source admin dashboard template built with Tailwind CSS and Flowbite.
 
 ## Table of Contents
 
-- [Flowbite Admin Dashboard ](#flowbite-admin-dashboard-)
-  - [🌀 Built with Flowbite](#-built-with-flowbite)
-  - [💨 Tailwind CSS utility classes](#-tailwind-css-utility-classes)
-  - [📊 15 example pages](#-15-example-pages)
-  - [🧱 Advanced components](#-advanced-components)
-  - [📚 Flowbite documentation](#-flowbite-documentation)
-  - [⚙️ Workflow](#️-workflow)
+- [Flowbite Admin Dashboard](#flowbite-admin-dashboard)
   - [Table of Contents](#table-of-contents)
-  - [Demo pages](#demo-pages)
-  - [Quick start](#quick-start)
-    - [JavaScript Frameworks](#javascript-frameworks)
-    - [Back-end Frameworks](#back-end-frameworks)
-  - [File Structure](#file-structure)
-  - [Browser Support](#browser-support)
-  - [Resources](#resources)
-  - [Reporting Issues](#reporting-issues)
-  - [Technical Support or Questions](#technical-support-or-questions)
-  - [Licensing](#licensing)
-  - [Useful Links](#useful-links)
-  - [Authors](#authors)
+  - [Project Overview](#project-overview)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Usage](#usage)
+    - [Development](#development)
+    - [Building for Production](#building-for-production)
+  - [Architecture](#architecture)
+    - [Technologies](#technologies)
+    - [Directory Structure](#directory-structure)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-## Demo pages
+## Project Overview
 
-| Dashboard | Stacked Layout | Products (CRUD)
-| --- | --- | --- |
-| [![Dashboard](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/homepage.jpg)](https://flowbite-admin-dashboard.vercel.app/) | [![Stacked Layout](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/stacked.jpg)](https://flowbite-admin-dashboard.vercel.app/layouts/stacked/) | [![Products (CRUD)](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/products-crud.jpg)](https://flowbite-admin-dashboard.vercel.app/crud/products/)
+This project is a free and open-source admin dashboard template built with modern web technologies. It provides a solid foundation for building admin interfaces, with a focus on developer experience and ease of use.
 
-| Users (CRUD) | Settings | Pricing page
-| --- | --- | --- |
-| [![Users (CRUD)](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/users.jpg)](https://flowbite-admin-dashboard.vercel.app/crud/users/) | [![Settings](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/settings.jpg)](https://flowbite-admin-dashboard.vercel.app/settings/) | [![Pricing page](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/pricing.jpg)](https://flowbite-admin-dashboard.vercel.app/pages/pricing/)
+**Features:**
 
-| Login page | Register page | Reset password
-| --- | --- | --- |
-| [![Login page](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/login.jpg)](https://flowbite-admin-dashboard.vercel.app/authentication/sign-in/) | [![Register page](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/register.jpg)](https://flowbite-admin-dashboard.vercel.app/authentication/sign-up/) | [![Reset password](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/reset-password.jpg)](https://flowbite-admin-dashboard.vercel.app/authentication/reset-password/)
+*   **Responsive Design:** Works on all screen sizes, from mobile to desktop.
+*   **Component-based:** Built with reusable components from Flowbite.
+*   **Dark Mode:** Includes a dark mode version of the dashboard.
+*   **Charts:** Uses ApexCharts for data visualization.
+*   **Tooling:** Uses Hugo for static site generation and Webpack for asset bundling.
 
-| Forgot password | Profile lock | Maintenance page
-| --- | --- | --- |
-| [![Forgot password](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/forgot-password.jpg)](https://flowbite-admin-dashboard.vercel.app/authentication/forgot-password/) | [![Profile lock](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/profile-lock.jpg)](https://flowbite-admin-dashboard.vercel.app/authentication/profile-lock/) | [![Maintenance page](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/maintenance.jpg)](https://flowbite-admin-dashboard.vercel.app/pages/maintenance/)
+## Getting Started
 
-| 404 not found | 500 server error | Playground
-| --- | --- | --- |
-| [![404 not found](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/404.jpg)](https://flowbite-admin-dashboard.vercel.app/pages/404/) | [![500 server error](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/500.jpg)](https://flowbite-admin-dashboard.vercel.app/pages/500/) | [![Playground](https://flowbite.s3.amazonaws.com/templates/flowbite-admin-dashboard/github/playground.jpg)](https://flowbite-admin-dashboard.vercel.app/playground/sidebar/)
+### Prerequisites
 
--   [Live Preview](https://flowbite-admin-dashboard.vercel.app/)
+Before you begin, ensure you have the following installed:
 
-## Quick start
+*   [Node.js](https://nodejs.org/en/) (v14 or higher)
+*   [Hugo](https://gohugo.io/getting-started/installing/) (extended version)
+*   [Yarn](https://classic.yarnpkg.com/en/docs/install) (optional, but recommended)
 
-1. Clone this repository or download the ZIP file
-2. Make sure that you have Node.js and NPM installed
-3. Install the project dependencies from the `package.json` file:
+### Installation
 
-```
-npm install
-```
+1.  **Clone the repository:**
 
-4. Create a local server on `localhost:1313` by running the following command:
+    ```bash
+    git clone https://github.com/themesberg/flowbite-admin-dashboard.git
+    cd flowbite-admin-dashboard
+    ```
 
-```
+2.  **Install dependencies:**
+
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+## Usage
+
+### Development
+
+To start the development server, run the following command:
+
+```bash
 npm run start
+# or
+yarn start
 ```
 
-You can also build the project and get the distribution files inside the `public/` folder by running:
+This will start a local development server at `http://localhost:1313`. The server will automatically reload when you make changes to the source files.
 
-```
+### Building for Production
+
+To build the project for production, run the following command:
+
+```bash
 npm run build
+# or
+yarn build
 ```
 
-You can instantly upload your project to Vercel by selecting the default HUGO configuration, but depending on your own tech stack whether it's React.js, Vue, Nuxt.js, Next.js or a back-end framework you can also just copy the layouts from this project inside your own tech stack.
+This will create a `public` directory with the optimized and minified files ready for deployment.
 
-Here's a list of compatible technologies and guides for Flowbite and Tailwind CSS:
+## Architecture
 
-### JavaScript Frameworks
+This project follows a modern web development architecture, separating content, layout, and logic.
 
-The awesome open-source community also built and currently maintains the following standalone libraries for React, Vue, Svelte, and Angular:
+### Technologies
 
-- [🌀 Flowbite React Library](https://github.com/themesberg/flowbite-react)
-- [🍀 Flowbite Vue Library](https://github.com/themesberg/flowbite-vue)
-- [🎸 Flowbite Svelte Library](https://github.com/themesberg/flowbite-svelte)
-- [📕 Flowbite Angular Library](https://github.com/themesberg/flowbite-angular)
+*   **[Hugo](https://gohugo.io/):** A fast and flexible static site generator written in Go. It is used to build the HTML pages from the content and layout files.
+*   **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework for rapidly building custom designs.
+*   **[Flowbite](https://flowbite.com/):** A component library built on top of Tailwind CSS.
+*   **[Webpack](https://webpack.js.org/):** A module bundler for JavaScript applications. It is used to bundle the JavaScript source code and its dependencies.
+*   **[ApexCharts](https://apexcharts.com/):** A modern charting library for building interactive charts and visualizations.
 
-We also wrote integration guides for the following front-end frameworks and libraries:
+### Directory Structure
 
-- [📝 Flowbite with React guide](https://flowbite.com/docs/getting-started/react/)
-- [📝 Flowbite with Next.js guide](https://flowbite.com/docs/getting-started/next-js/)
-- [📝 Flowbite with Vue guide](https://flowbite.com/docs/getting-started/vue/)
-- [📝 Flowbite with Nuxt.js guide](https://flowbite.com/docs/getting-started/nuxt-js/)
-- [📝 Flowbite with Svelte guide](https://flowbite.com/docs/getting-started/svelte/)
-
-### Back-end Frameworks
-
-Flowbite has a great integration with most of the back-end frameworks because it relies on vanilla JavaScript:
-
-- [📚 Using Flowbite with Laravel](https://flowbite.com/docs/getting-started/laravel/)
-- [🚊 Using Flowbite with Ruby on Rails 7](https://flowbite.com/docs/getting-started/rails/)
-- [🐸 Using Flowbite with Django](https://flowbite.com/docs/getting-started/django/)
-- [🌶 Using Flowbite with Flask](https://flowbite.com/docs/getting-started/flask/)
-
-## File Structure
-
-Within the download you'll find the following directories and files:
+The project has the following directory structure:
 
 ```
-Flowbite Admin Dashboard
 .
-├── LICENSE
-├── README.md
-├── config.yml
-├── content
-├── data
-├── layouts
-├── node_modules
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── resources
-├── src
-├── static
-├── tailwind.config.js
-├── webpack.config.js
-└── yarn.lock
+├── content/         # Markdown files for the website content
+├── data/            # Data files (JSON, YAML) used by Hugo
+├── layouts/         # HTML templates for rendering the content
+├── src/             # Source code for JavaScript and CSS
+├── static/          # Static assets (images, fonts, etc.)
+├── public/          # The output of the build process
+├── config.yml       # Hugo configuration file
+├── package.json     # Node.js dependencies and scripts
+└── webpack.config.js # Webpack configuration file
 ```
 
-## Browser Support
+*   `content/`: This directory contains the markdown files that represent the content of the pages. Each file corresponds to a page on the website.
+*   `data/`: This directory contains data files in JSON or YAML format. These files can be used in the templates to populate data-driven components.
+*   `layouts/`: This directory contains the Hugo templates. The `_default` directory contains the base templates, and other directories can be created for specific content types.
+*   `src/`: This directory contains the source code for the frontend assets, including JavaScript and CSS.
+*   `static/`: This directory contains static assets that are copied directly to the `public` directory during the build process.
+*   `public/`: This directory is where the generated static site is placed after a successful build.
+*   `config.yml`: This is the main configuration file for the Hugo project.
+*   `package.json`: This file defines the project's dependencies and scripts for building and development.
+*   `webpack.config.js`: This file contains the configuration for Webpack, which is used to bundle the JavaScript modules.
 
-At present, we officially aim to support the last two versions of the following browsers:
+## Contributing
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or suggestions.
 
-## Resources
+## License
 
-- Live preview: <https://flowbite-admin-dashboard.vercel.app/>
-- Flowbite documentation: <https://flowbite.com/docs/getting-started/introduction/>
-- Tailwind CSS documentation: <https://tailwindcss.com/>
-- License Agreement: <https://flowbite.com/docs/getting-started/license/>
-- Issues: [Github Issues Page](https://github.com/themesberg/flowbite-admin-dashboard/issues)
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for Flowbite Admin Dashboard. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of Flowbite Admin Dashboard. Check the CHANGELOG from your dashboard on the [GitHub releases page](https://github.com/themesberg/flowbite-admin-dashboard/releases).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://flowbite.com/contact/) instead of opening an issue.
-
-## Licensing
-
-- Copyright 2019-2023 Bergside Inc. (https://flowbite.com)
-- Open-source under the [MIT License](https://github.com/themesberg/flowbite-admin-dashboard/blob/main/LICENSE)
-
-## Useful Links
-
-- 📚 [Flowbite Library](https://flowbite.com/) - Open-source components built with Tailwind CSS
-- 🎨 [Flowbite Figma](https://flowbite.com/figma/) - Design system built for Figma
-- 🧱 [Flowbite Blocks](https://flowbite.com/blocks/) - Building sections for website and applications
-- 💎 [Flowbite Pro](https://flowbite.com/pro/) - A larger collection of the open-source version of the latter three
-
-## Authors
-
-- [Zoltán Szőgyényi](https://twitter.com/zoltanszogyenyi)
-- [Robert Tanislav](https://twitter.com/roberttanislav)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
