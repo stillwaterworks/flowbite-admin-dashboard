@@ -1,0 +1,5 @@
+timestamp,product_id,quantity_sold,price_per_unit,cost_per_unit,category,total_value
+2025-08-15 12:00:00,Coffee,50,3.50,1.00,Beverage,175.00
+2025-08-15 12:00:00,Sandwich,30,8.00,3.50,Food,240.00
+2025-08-15 12:00:00,Pastry,40,4.00,1.50,Food,160.00
+2025-08-15 12:00:00,Branded Mug,5,12.00,5.00,Merchandise,60.00
